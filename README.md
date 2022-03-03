@@ -7,11 +7,10 @@
      * [GIT-for-Windows (cli) unter Windows installieren](https://git-scm.com/download/win)
   
   1. Intellij
-     * [Intellij](intellij/intellij-overview.md) 
+     * [Intellij Übersicht](intellij/intellij-overview.md) 
   
   1. TortoiseGit 
-     * [TortoiseGit](tortoisegit/tortoisegit-overview.md)
-     
+     * [TortoiseGit Übersicht](tortoisegit/tortoisegit-overview.md)
   
   1. Commands (with tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
