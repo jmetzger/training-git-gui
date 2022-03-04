@@ -54,6 +54,9 @@
   
   1. Help
      * [Help from commandline](help.md)
+
+  1. Databases 
+     * [Toad for Oracle and GIT](/databases/toad-oracle-git.md)
     
   1. Documentation 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf) 
