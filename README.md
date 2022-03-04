@@ -12,6 +12,7 @@
   1. TortoiseGit 
      * [TortoiseGit Übersicht](tortoisegit/tortoisegit-overview.md)
      * [See changes in a file (git blame)](/tortoisegit/blame.md) 
+     * [Show logs for a specific file](/tortoisegit/show-logs-for-file.md)
   
   1. Commands (with tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
