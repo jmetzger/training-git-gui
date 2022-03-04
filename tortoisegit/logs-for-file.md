@@ -1,4 +1,4 @@
-# Show logs only for a specic file 
+# Show logs only for a specific file 
 
 ## What does it ?
 
