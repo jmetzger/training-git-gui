@@ -2,12 +2,12 @@
 
 ## Agenda 
 
-  1. Installation 
+  1. Installation (Kommandozeile/Bash)  
      * [GIT (cli) auf Ubuntu/Debian installieren](installation-ubuntu-debian.md)
      * [GIT-for-Windows (cli) unter Windows installieren](https://git-scm.com/download/win)
   
-  1. Intellij
-     * [Intellij Übersicht](intellij/intellij-overview.md) 
+  1. Visual Code Studio (VSCode) 
+     * [Installation VSCode,git und Erweiterungen](/installation/vscode-git-graph.md) 
   
   1. TortoiseGit 
      * [TortoiseGit Übersicht](tortoisegit/tortoisegit-overview.md)
