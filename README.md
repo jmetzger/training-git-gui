@@ -72,5 +72,6 @@
      * https://github.com/GitAlias/gitalias/blob/main/gitalias.txt
      * https://education.github.com/git-cheat-sheet-education.pdf
      * https://interworks.com/blog/2021/09/15/setting-up-ssh-agent-in-windows-for-passwordless-git-authentication/
+     * https://confluence.atlassian.com/bitbucketserver/git-large-file-storage-794364846.html?utm_campaign=in-app-help&utm_medium=in-app-help&locale=de_DE%2Cde&utm_source=stash
      
    
