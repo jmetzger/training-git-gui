@@ -71,5 +71,6 @@
      * https://www.innoq.com/de/talks/2019/05/commit-message-101/
      * https://github.com/GitAlias/gitalias/blob/main/gitalias.txt
      * https://education.github.com/git-cheat-sheet-education.pdf
+     * https://interworks.com/blog/2021/09/15/setting-up-ssh-agent-in-windows-for-passwordless-git-authentication/
      
    
