@@ -2,9 +2,17 @@
 
 
 ## Agenda
-  1. Installation 
-     * [GIT auf Ubuntu/Debian installieren](#git-auf-ubuntudebian-installieren)
-     * [GIT unter Windows installieren](https://git-scm.com/download/win)
+  1. Installation (Kommandozeile/Bash)  
+     * [GIT (cli) auf Ubuntu/Debian installieren](#git-cli-auf-ubuntudebian-installieren)
+     * [GIT-for-Windows (cli) unter Windows installieren](https://git-scm.com/download/win)
+  
+  1. Visual Code Studio (VSCode) 
+     * [Installation VSCode,git und Erweiterungen](#installation-vscodegit-und-erweiterungen)
+  
+  1. TortoiseGit 
+     * [TortoiseGit Übersicht](#tortoisegit-übersicht)
+     * [See changes in a file (git blame)](#see-changes-in-a-file-git-blame)
+     * [Show logs for a specific file](#show-logs-for-a-specific-file)
   
   1. Commands (with tipps & tricks) 
      * [git add + Tipps & Tricks](#git-add-+-tipps-&-tricks)
@@ -25,13 +33,13 @@
   1. Tips & tricks 
      * [Beautified log](#beautified-log)
      * [Change already committed files and message](#change-already-committed-files-and-message)
-     * [Best practice - Delete origin,tracking and local branch after pull request/merge request](#best-practice---delete-origin,tracking-and-local-branch-after-pull-requestmerge-request)
+     * [Best practice - Delete origin,tracking and local branch after pull request/merge request](#best-practice---delete-origintracking-and-local-branch-after-pull-requestmerge-request)
      * [Einzelne Datei auschecken](#einzelne-datei-auschecken)
      * [Always rebase on pull - setting](#always-rebase-on-pull---setting)
      * [Arbeit mit submodules](#arbeit-mit-submodules)
-     * [Integration von Änderungen (commits, einzelne Dateien) aus anderen commits in den Master](#integration-von-änderungen-commits,-einzelne-dateien-aus-anderen-commits-in-den-master)
+     * [Integration von Änderungen (commits, einzelne Dateien) aus anderen commits in den Master](#integration-von-änderungen-commits-einzelne-dateien-aus-anderen-commits-in-den-master)
      * [Fix conflict you have in merge-request (gitlab)](#fix-conflict-you-have-in-merge-request-gitlab)
-     * [SETUP.sql zu setup.sql in Windows (Groß- und Kleinschreibung)](#setup.sql-zu-setup.sql-in-windows-groß--und-kleinschreibung)
+     * [SETUP.sql zu setup.sql in Windows (Groß- und Kleinschreibung)](#setupsql-zu-setupsql-in-windows-groß--und-kleinschreibung)
   
   1. Exercises 
      * [merge feature/4712 - conflict](#merge-feature4712---conflict)
@@ -48,6 +56,9 @@
   
   1. Help
      * [Help from commandline](#help-from-commandline)
+
+  1. Databases 
+     * [Toad for Oracle and GIT](#toad-for-oracle-and-git)
     
   1. Documentation 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
@@ -60,14 +71,16 @@
      * https://www.innoq.com/de/talks/2019/05/commit-message-101/
      * https://github.com/GitAlias/gitalias/blob/main/gitalias.txt
      * https://education.github.com/git-cheat-sheet-education.pdf
+     * https://interworks.com/blog/2021/09/15/setting-up-ssh-agent-in-windows-for-passwordless-git-authentication/
+     * https://confluence.atlassian.com/bitbucketserver/git-large-file-storage-794364846.html?utm_campaign=in-app-help&utm_medium=in-app-help&locale=de_DE%2Cde&utm_source=stash
      
    
 
 <div class="page-break"></div>
 
-## Installation 
+## Installation (Kommandozeile/Bash)  
 
-### GIT auf Ubuntu/Debian installieren
+### GIT (cli) auf Ubuntu/Debian installieren
 
 
 ### Installation 
@@ -97,9 +110,59 @@ LANG=en_US.UTF-8
 
 ```
 
-### GIT unter Windows installieren
+### GIT-for-Windows (cli) unter Windows installieren
 
   * https://git-scm.com/download/win
+
+## Visual Code Studio (VSCode) 
+
+### Installation VSCode,git und Erweiterungen
+
+
+### Vorbemerkungen 
+
+  * Die Reihenfolge ist wichtig, wenn wir auf einfache Art und Weise vscode als Editor auch von der Kommandozeile (git-for-bash) aus verwenden wollen
+
+### Schritte: 
+
+  * Schritt 1: Visual Code Studio installieren (Standardeinstellungen bis auf Kontextmenu -> VisualCode Studio) 
+  * Schritt 2: git-for-windows installieren (Standardeinstellungen) 
+  * Schritt 3: In Visual Code Studio -> linke Menü Erweiterungen -> Suchen nach git graph -> Installieren 
+
+
+## TortoiseGit 
+
+### TortoiseGit Übersicht
+
+### See changes in a file (git blame)
+
+
+### What is it for ? 
+
+Find out how has changed which line in a file in which revision 
+
+### How to use it ? 
+
+  * Select a file in the filesystem 
+    * Then: Right Click > TortoiseGIT -> Blame 
+
+### Reference:
+
+  * https://tortoisegit.org/docs/tortoisegit/tgit-dug-blame.html
+
+### Show logs for a specific file
+
+
+### What does it ?
+
+  * It makes it possible to only show the logs, the contains changes for a file (commit) 
+
+### How to do it ? 
+
+  * Select a file in the filesystem of your project 
+  * Right Click > Tortoise GIT -> Show log 
+  * Now all the logs for that file will be shown 
+
 
 ## Commands (with tipps & tricks) 
 
@@ -784,6 +847,37 @@ git help log
 ## --> a webpage will open with content 
 
 ```
+
+## Databases 
+
+### Toad for Oracle and GIT
+
+
+### What ? 
+
+Toad for Oracle provides a way to manage your database objects
+locally. 
+
+This is done through Utilities->Team Coding->Select VCS Project  
+(different VCS's are support: git, svn a.s.o) 
+
+Locally it uses git for windows (which you also need to install, as it 
+uses the executable).
+
+```
+From the Toad main menu select Utilities – Team Coding – Select VCS Project. 
+The Git login window will open. Enter the information for repository, Git User and Git email. Click Ok
+```
+
+### Refs:
+
+  * https://blog.toadworld.com/using-git-version-control-system-in-toad-for-oracle
+
+### Videos:
+
+  * There are some videos that help you to set this up 
+  * https://www.quest.com/video/setting-up-team-coding-with-vcs-integration8121746/
+
 
 ## Documentation 
 
